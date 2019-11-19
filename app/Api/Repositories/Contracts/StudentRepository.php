@@ -10,5 +10,5 @@ use Prettus\Repository\Contracts\RepositoryInterface;
 interface StudentRepository extends RepositoryInterface
 {
     public function getStudents($params = [], $limit = 0);
-    public function deleteStudents($params = [],$limit = 0);
+
 }

@@ -53,15 +53,4 @@ class StudentRepositoryEloquent extends BaseRepository implements StudentReposit
         $this->popCriteria(new StudentCriteria($params));//lấy ... từ StudentCriteria
         return $item;
     }
-    public function deleteStudents($params = [],$limit = 0)
-    {
-       // $this->pushCriteria(new StudentCriteria($params));
-        if(!empty($params['id']))
-        {
-            $item=$this->delete($params['id']);
-        }
-        else $item=$this->paginate();
-      //  $this->popCriteria(new StudentCriteria($params));//lấy ... từ StudentCriteria
-        return $item;
-    }
 }
