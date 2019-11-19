@@ -1,0 +1,64 @@
+{
+    "name": "laravel/lumen",
+    "description": "The Laravel Lumen Framework.",
+    "keywords": ["framework", "laravel", "lumen"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/lumen-framework": "5.4.*",
+        "vlucas/phpdotenv": "~2.2",        
+        "dingo/api": "1.0.x@dev",
+        "tymon/jwt-auth": "^1.0@dev",
+        "illuminate/mail": "^5.3",
+        "guzzlehttp/guzzle": "^6.2",
+        "predis/predis": "^1.0",
+        "illuminate/redis": "^5.2",
+        "prettus/l5-repository": "^2.6.6",
+        "aws/aws-sdk-php": "~3.0",
+        "sentry/sentry-laravel": "^0.4.1",
+        "mongodb/mongodb": "^1.1.0-alpha1",
+        "moloquent/moloquent": "dev-master",
+        "laravel/socialite": "~2.0",
+        "anhskohbo/u-convert": "dev-master",
+        "intervention/image": "^2.3",
+        "barryvdh/laravel-dompdf": "^0.8.1",
+        "spatie/pdf-to-image": "^1.4",
+        "zyzo/meteor-ddp-php": "1.2.0",
+        "sunra/php-simple-html-dom-parser": "1.5.2",
+        "maatwebsite/excel": "~2.1.0",
+        "yangbx/captcha-lumen": "^1.0",
+        "yajra/laravel-datatables-oracle": "~8.0",
+        "illuminate/notifications": "5.4.*",
+        "laravel-notification-channels/onesignal": "^1.0",
+        "kreait/firebase-php": "^4.9",
+        "phpoffice/phpspreadsheet": "^1.4",
+        "mobiledetect/mobiledetectlib": "^2.8",
+        "facebook/php-sdk-v4": "^5.6"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "phpunit/phpunit": "~4.0",
+        "mockery/mockery": "^0.9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Api\\": "app/Api/",
+            "Libraries\\": "app/Libraries/",
+            "Gma\\": "app/Libraries/Gma/",
+            "Utilities\\": "app/Libraries/Utilities/"
+
+        },
+        "files": [
+            "app/helpers.php",
+            "app/constants.php"
+        ]
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/",
+            "database/"
+        ]
+    }
+}
